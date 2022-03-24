@@ -1,0 +1,143 @@
+/************ VARIABLES ************/
+/************ MIXINS ************/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 0.65rem;
+  width: 100%;
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  background: url("./Components/background12.png");
+}
+
+a {
+  text-decoration: none;
+}
+
+/************ FONT FAMILY ************/
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-opensans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/************ HEIGHT ************/
+.h-1 {
+  height: 1.39rem;
+}
+
+.h-12 {
+  height: 12rem;
+}
+
+/************ OUTLINE ************/
+.outline-grey {
+  outline: 0.1rem solid #c8c8c8;
+}
+
+.outline-white {
+  outline: 0.5rem solid rgba(255, 255, 255, 0.9);
+}
+
+.outline-black {
+  outline: 0.5rem solid rgba(0, 0, 0, 0.5);
+}
+
+/************ BACKGROUND ************/
+.bg-grey {
+  background: #969696;
+}
+
+.bg-light-grey {
+  background-color: #c8c8c8;
+}
+
+.bg-dark-grey {
+  background: #424041;
+}
+
+.bg-image-one {
+  background: url("Components/promo_glass.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.bg-image-two {
+  background: url("Components/promo_plates-5.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-image-three {
+  background: url("Components/promo_album.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/************ TEXT COLOR ************/
+.text-grey {
+  color: #969696;
+}
+
+.text-black {
+  color: #000;
+}
+
+.text-blue {
+  color: #1b4f72;
+}
+
+/************ BORDER ************/
+.border-right-white-01 {
+  border-right: 0.1rem solid rgba(255, 255, 255, 0.9);
+}
+
+.border-right-black-01 {
+  border-right: 0.01rem solid #c8c8c8;
+}
+
+.border-right-04 {
+  border-right: 0.4rem solid rgba(255, 255, 255, 0.9);
+}
+
+/************ LINE SPACE ************/
+.line-space {
+  line-height: 1.5rem;
+}
+
+/************ FONT SIZE ************/
+.text-x-small {
+  font-size: 0.6rem;
+}
+
+.text-small {
+  font-size: 0.75rem;
+}
+
+.text-medium {
+  font-size: 0.85rem;
+}
+
+/************ PADDING ************/
+.ps-10 {
+  padding-left: 12rem;
+}
+
+/************ MEDIA QUERY ************/
+@media screen and (max-width: 990px) {
+  body {
+    font-size: 50%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

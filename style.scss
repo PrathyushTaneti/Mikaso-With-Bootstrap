@@ -1,0 +1,136 @@
+@import "variables";
+@import "mixins";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 0.65rem;
+    width : 100%;
+    color : $black-color;
+    font-family: 'Roboto', sans-serif;
+    background: url("./Components/background12.png");
+}
+
+a{
+    text-decoration: none;
+}
+/************ FONT FAMILY ************/
+
+.font-montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.font-inter{
+    font-family: 'Inter', sans-serif;
+}
+
+.font-opensans{
+    font-family: 'Open Sans', sans-serif;
+}
+/************ HEIGHT ************/
+
+.h-1{
+    height : 1.39rem;
+}
+
+.h-12{
+    height : 12rem;
+}
+/************ OUTLINE ************/
+
+.outline-grey{
+    @include outline(0.1rem,$light-grey-color);
+}
+
+.outline-white{
+    @include outline(0.5rem,$white-color);
+}
+
+.outline-black{
+    @include outline(0.5rem,$light-black-color);
+}
+/************ BACKGROUND ************/
+
+.bg-grey{
+    background: $grey-color;
+}
+
+.bg-light-grey{
+    background-color: $light-grey-color;
+}
+
+.bg-dark-grey{
+    background: $dark-grey-color;
+}
+
+.bg-image-one{
+    @include bg-image("Components/promo_glass.png", no-repeat, contain);
+}
+
+.bg-image-two{
+    @include bg-image("Components/promo_plates-5.jpeg", no-repeat, cover);
+}
+
+.bg-image-three{
+    @include bg-image("Components/promo_album.jpeg", no-repeat, cover);
+}
+/************ TEXT COLOR ************/
+
+.text-grey{
+    color : $grey-color;
+}
+
+.text-black{
+    color : $black-color;
+}
+
+.text-blue{
+    color : $blue-color;
+}
+/************ BORDER ************/
+
+.border-right-white-01{
+    @include border-right(0.1rem, $white-color);
+}
+
+.border-right-black-01{
+    @include border-right(0.01rem, $light-grey-color);
+}
+
+.border-right-04{
+    @include border-right(0.4rem, $white-color);
+}
+/************ LINE SPACE ************/
+
+.line-space{
+    line-height: 1.5rem;
+}
+/************ FONT SIZE ************/
+
+.text-x-small{
+    font-size: 0.6rem;
+}
+
+.text-small{
+    font-size: 0.75rem;
+}
+
+.text-medium{
+    font-size: 0.85rem;
+}
+/************ PADDING ************/
+
+.ps-10{
+    padding-left: $left-padding;
+}
+/************ MEDIA QUERY ************/
+
+@media screen and (max-width : 990px){
+    body{
+        font-size: 50%;
+    }       
+}

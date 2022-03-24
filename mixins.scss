@@ -1,0 +1,15 @@
+/************ MIXINS ************/
+
+@mixin outline($width,$color){
+    outline : $width solid $color;
+}
+
+@mixin bg-image($imagepath,$repeat,$size){
+    background: url($imagepath);
+    background-repeat: $repeat;
+    background-size: $size;
+}
+
+@mixin border-right($width,$color){
+    border-right : $width solid $color;
+}
